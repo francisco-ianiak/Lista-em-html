@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas com HTML e CSS</title>
+    <style>
+        table{
+            border: 3px #000000 solid;
+            border-radius: 5px;
+            width: 50%;
+            margin: auto;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            
+        }
+
+        caption{
+            font-size: 35px;
+            
+        }
+
+        th, td{
+            border: 3px #ff0000 solid;
+            padding: 10px;
+            text-align: center;
+        
+        }
+
+        th{
+            background-color: #000000;
+            color: #ffffff;
+        }
+        
+        #produto:hover {
+            background-color: yellow;
+        }
+
+        #Preço:hover {
+            background-color: yellow;
+        }
+            
+
+        
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption><strong>Preços de Produtos Eletrônicos</strong></caption>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td id="produto">Notebook</td>
+                <td id="Preço">R$3.500,00</td>
+            </tr>
+
+            <tr>
+                <td id="produto">Caixa de Som</td>
+                <td id="Preço">R$500,00</td>
+            </tr>
+
+            <tr>
+                <td id="produto">Tablet</td>
+                <td id="Preço">R$1.500,00</td>
+            </tr>
+
+            <tr>
+                <td id="produto"> Tv Digital</td>
+                <td id="Preço">R$3.500,00</td>
+            </tr>
+
+            
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td id="produto">Total</td>
+                <td id="Preço">R$9.000,00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <table>
+
+        <caption><strong>Horário de aulas - Turma 2024</strong></caption>
+        <thead>
+            <th colspan="5">Horário de aulas - Turma 2024</th>
+            <tr>
+                <th>Horário</th>
+                <th>Segunda-feira</th>
+                <th>Terça-feira</th>
+                <th>Quarta-feira</th>
+                <th>Quinta-feira</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td id="produto">08:00 - 09:00</td>
+                <td id="produto">Matemática</td>
+                <td id="produto">História</td>
+                <td rowspan="2" id="produto">Educação Física</td>
+                <td id="produto">química</td>
+            </tr>
+
+            <tr>
+                <td id="produto">09:00 - 10:00</td>
+                <td colspan="2" id="produto">Português (2 horas )</td>
+                <td id="produto">Biologia</td>
+            </tr>
+
+            <tr>
+                <td id="produto">10:00 - 11:00</td>
+                <td id="produto">Geografia</td>
+                <td id="produto">Física</td>
+                <td id="produto">Matemática</td>
+                <td id="produto">História</td>
+            </tr>
+
+            <tr>
+                <td id="produto">11:00 - 12:00</td>
+                <td colspan="4" id="produto">Projeto Interdisciplinar (todas as discipilinas)  </td>              
+            </tr>
+        </tbody>
+
+    </table>
+
+    <!-- https://www.dio.me/articles/tabelas-em-html5 -->
+    
+</body>
+</html>
